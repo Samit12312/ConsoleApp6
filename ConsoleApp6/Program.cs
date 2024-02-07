@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Diagnostics.Eventing.Reader;
@@ -98,6 +98,14 @@ namespace ConsoleApp6
    }
         static void Main(string[] args)
         {
+            Console.WriteLine("date 2022 december 10");
+            Console.WriteLine("write number between 1-20");
+            int days = int.Parse(Console.ReadLine());
+            int day = days + 10;
+            int dec = 12;
+            int year = 2022;
+            Console.WriteLine(year);
+
 
 
                 Console.ReadLine();
