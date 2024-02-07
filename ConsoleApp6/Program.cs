@@ -63,6 +63,39 @@ namespace ConsoleApp6
 
             Console.ReadLine();
         }
+           private static void Targil4()
+   {
+       Console.WriteLine("enter 1 number");
+       int A = int.Parse(Console.ReadLine());
+       Console.WriteLine("enter second number");
+       int B = int.Parse(Console.ReadLine());
+       int num = A * B;
+       if (A > B)
+           Console.WriteLine("A is bigger than B ");
+       else
+       {
+           num = B - A;
+           Console.WriteLine("A is smaller then B");
+       }
+       Console.WriteLine(num);
+   }
+   static void targil5()
+   {
+       Console.WriteLine("enter 3 didgets number");
+       int num = int.Parse(Console.ReadLine());
+
+       int meot = num / 100;
+       int units = num % 10;
+       int mid = num / 10 % 10;
+       int caful = meot * units;
+       int midl = mid * mid;
+       if (caful == midl)
+       {
+           Console.WriteLine(num);
+       }
+       else Console.WriteLine(mid);
+
+   }
         static void Main(string[] args)
         {
 
