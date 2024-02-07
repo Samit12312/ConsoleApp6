@@ -63,52 +63,66 @@ namespace ConsoleApp6
 
             Console.ReadLine();
         }
-           private static void Targil4()
-   {
-       Console.WriteLine("enter 1 number");
-       int A = int.Parse(Console.ReadLine());
-       Console.WriteLine("enter second number");
-       int B = int.Parse(Console.ReadLine());
-       int num = A * B;
-       if (A > B)
-           Console.WriteLine("A is bigger than B ");
-       else
-       {
-           num = B - A;
-           Console.WriteLine("A is smaller then B");
-       }
-       Console.WriteLine(num);
-   }
-   static void targil5()
-   {
-       Console.WriteLine("enter 3 didgets number");
-       int num = int.Parse(Console.ReadLine());
+        private static void Targil4()
+        {
+            Console.WriteLine("enter 1 number");
+            int A = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter second number");
+            int B = int.Parse(Console.ReadLine());
+            int num = A * B;
+            if (A > B)
+                Console.WriteLine("A is bigger than B ");
+            else
+            {
+                num = B - A;
+                Console.WriteLine("A is smaller then B");
+            }
+            Console.WriteLine(num);
+        }
+        static void targil5()
+        {
+            Console.WriteLine("enter 3 didgets number");
+            int num = int.Parse(Console.ReadLine());
 
-       int meot = num / 100;
-       int units = num % 10;
-       int mid = num / 10 % 10;
-       int caful = meot * units;
-       int midl = mid * mid;
-       if (caful == midl)
-       {
-           Console.WriteLine(num);
-       }
-       else Console.WriteLine(mid);
+            int meot = num / 100;
+            int units = num % 10;
+            int mid = num / 10 % 10;
+            int caful = meot * units;
+            int midl = mid * mid;
+            if (caful == midl)
+            {
+                Console.WriteLine(num);
+            }
+            else Console.WriteLine(mid);
 
-   }
+        }
+        static void targil6()
+        {
+            Console.WriteLine("Enter the day in December:");
+            int day = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the year:");
+            int year = int.Parse(Console.ReadLine());
+
+            int month = 12;
+            int days = day + 20;
+            if (days > 30)
+            {
+                int months = month - 11;
+                int newyeardate = (year + 1);
+                int dayss = days % 30;
+                Console.WriteLine("{0}/{1}/{2}", dayss, months, newyeardate);
+            }
+            else
+            {
+                int newdaydate = day + 20;
+                Console.WriteLine("{0}/{1}/{2}", newdaydate, month, year);
+            }
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("date 2022 december 10");
-            Console.WriteLine("write number between 1-20");
-            int days = int.Parse(Console.ReadLine());
-            int day = days + 10;
-            int dec = 12;
-            int year = 2022;
-            Console.WriteLine(year);
-
-
-
-                Console.ReadLine();
+            Console.ReadLine();
+            
         }
     }
 }
