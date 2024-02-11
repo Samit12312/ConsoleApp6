@@ -121,8 +121,32 @@ namespace ConsoleApp6
         }
         static void Main(string[] args)
         {
-            Console.ReadLine();
-            
+            Console.WriteLine("eneter 3 Letters in the order of the Alpha bet");
+            string input = Console.ReadLine();
+
+            if (input.Length != 3)
+            {
+                Console.WriteLine("there are no 3 letters");
+            }
+
+            char char1 = input[0];
+            char char2 = input[1];
+            char char3 = input[2];
+            int chack = (char)(char1 + 1);
+            if ((char2 == (char)(char1 + 1)) && (char3 == (char)(char2 + 1)))
+            {
+                Console.WriteLine("the characters follow the alpha bet");
+                Console.WriteLine(char1);
+                Console.WriteLine((char)(char1 + 1));
+                Console.WriteLine((char)(char2 + 1));
+                Console.WriteLine((char)(char3 + 1));
+            }
+            else
+            {
+                Console.WriteLine("the characters arent in order of the alpha bet");
+            }
+
+            Console.ReadLine();           
         }
     }
 }
