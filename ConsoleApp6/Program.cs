@@ -119,7 +119,7 @@ namespace ConsoleApp6
                 Console.WriteLine("{0}/{1}/{2}", newdaydate, month, year);
             }
         }
-        static void Main(string[] args)
+        static void targil7()
         {
             Console.WriteLine("eneter 3 Letters in the order of the Alpha bet");
             string input = Console.ReadLine();
@@ -129,11 +129,11 @@ namespace ConsoleApp6
                 Console.WriteLine("there are no 3 letters");
             }
 
-            char char1 = input[0];
-            char char2 = input[1];
-            char char3 = input[2];
-            int chack = (char)(char1 + 1);
-            if ((char2 == (char)(char1 + 1)) && (char3 == (char)(char2 + 1)))
+    char char1 = input[0];
+    char char2 = input[1];
+    char char3 = input[2];
+    int chack = (char)(char1 + 1);
+            if ((char2 == (char) (char1 + 1)) && (char3 == (char) (char2 + 1)))
             {
                 Console.WriteLine("the characters follow the alpha bet");
                 Console.WriteLine(char1);
@@ -142,11 +142,32 @@ namespace ConsoleApp6
                 Console.WriteLine((char)(char3 + 1));
             }
             else
+{
+    Console.WriteLine("the characters arent in order of the alpha bet");
+}
+        }
+        static void targil8()
+        {
+            Console.WriteLine("enter 3 numbers in 3 diffrent lines");
+            int numbers = int.Parse(Console.ReadLine());
+            int num3 = numbers % 10;
+            int num2 = (numbers / 10) % 10;
+            int num1 = numbers / 100;
+            if (num1 > num2 && num1 > num3)
             {
-                Console.WriteLine("the characters arent in order of the alpha bet");
+                Console.WriteLine("num1 is the biggest number");
             }
+            else if (num2 > num1 && num2 > num3)
+            {
+                Console.WriteLine("num2 is the biggest");
+            }
+            else Console.WriteLine("num3 is the biggest");
 
-            Console.ReadLine();           
+        }
+        static void Main(string[] args)
+        {
+
+            Console.ReadLine();
         }
     }
 }
