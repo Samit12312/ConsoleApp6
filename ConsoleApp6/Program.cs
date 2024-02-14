@@ -166,6 +166,23 @@ namespace ConsoleApp6
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("enter 3 length of a tringle");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            if (a + b < c || b + c < a || c + a < b)
+            {
+                Console.WriteLine("cannot create tringle");
+            }
+            else if (a == b || b == c || c == a)
+            {
+                Console.WriteLine("trinsle is an isosceles");
+            }
+            else if 
+
+
+
+
 
             Console.ReadLine();
         }
