@@ -174,12 +174,14 @@ namespace ConsoleApp6
             {
                 Console.WriteLine("cannot create tringle");
             }
-            else if (a == b || b == c || c == a)
+            else if (a ==  b)
             {
                 Console.WriteLine("trinsle is an isosceles");
             }
-            else if 
-
+            else if (a == b && c == a || b == c)
+            {
+                Console.WriteLine("equilateral");
+            }
 
 
 
