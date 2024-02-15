@@ -194,7 +194,7 @@ namespace ConsoleApp6
             }
 
         }
-        static void Main(string[] args)
+        static void targil10()
         {
             Console.WriteLine("enter a three-digit number:");
             int number = int.Parse(Console.ReadLine());
@@ -220,6 +220,10 @@ namespace ConsoleApp6
 
             int encryptedCode = num3 * 100 + num2 * 10 + num1;
             Console.WriteLine("encrypted code: " + encryptedCode);
+        }
+        static void Main(string[] args)
+        {
+
             Console.ReadLine();           
         }
     }
